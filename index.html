@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Alarimind, a sleep cycle, alarm, reminder, and offline sleep sounds app.">
+  <title>Privacy Policy · Alarimind</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #09111f;
+      --surface: rgba(18, 30, 52, .82);
+      --surface-strong: #15243d;
+      --text: #edf4ff;
+      --muted: #aab8cf;
+      --line: rgba(190, 211, 244, .16);
+      --accent: #9ed8ff;
+      --shadow: 0 24px 80px rgba(0, 0, 0, .3);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background:
+        radial-gradient(circle at 80% 0%, #1c3b63 0, transparent 34rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      color: #d0ecff;
+    }
+
+    .shell {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 30px 0 90px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 750;
+      letter-spacing: .01em;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 13px;
+      background: linear-gradient(145deg, #b8e5ff, #6d9fff);
+      color: #102442;
+      box-shadow: 0 8px 24px rgba(91, 166, 255, .25);
+    }
+
+    .brand-mark::before {
+      content: "☾";
+      font-size: 23px;
+    }
+
+    .nav-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .94rem;
+    }
+
+    .hero {
+      max-width: 760px;
+      padding-top: 88px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.15;
+      letter-spacing: -.035em;
+    }
+
+    h1 {
+      max-width: 700px;
+      margin: 18px 0 22px;
+      font-size: clamp(2.6rem, 7vw, 5.5rem);
+    }
+
+    h2 {
+      margin: 0 0 15px;
+      font-size: 1.55rem;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.13rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .meta strong {
+      color: var(--text);
+    }
+
+    main {
+      padding-bottom: 90px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    aside {
+      position: sticky;
+      top: 24px;
+      padding: 20px 0;
+    }
+
+    aside p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    aside a {
+      display: block;
+      padding: 7px 0;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .9rem;
+    }
+
+    aside a:hover {
+      color: var(--text);
+    }
+
+    .content {
+      min-width: 0;
+    }
+
+    .notice {
+      margin-bottom: 28px;
+      padding: 20px 22px;
+      border: 1px solid rgba(158, 216, 255, .28);
+      border-radius: 18px;
+      background: linear-gradient(
+        135deg,
+        rgba(111, 184, 255, .13),
+        rgba(111, 184, 255, .04)
+      );
+    }
+
+    .notice strong {
+      color: var(--accent);
+    }
+
+    .card {
+      margin-bottom: 18px;
+      padding: clamp(24px, 4vw, 38px);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card ul {
+      margin: 0 0 16px;
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
+    .card li + li {
+      margin-top: 7px;
+    }
+
+    .card strong {
+      color: var(--text);
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .contact-badge {
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface-strong);
+      font-size: 1.4rem;
+    }
+
+    footer {
+      padding: 28px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    footer .shell {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        padding-bottom: 58px;
+      }
+
+      .hero {
+        padding-top: 64px;
+      }
+
+      .layout {
+        display: block;
+      }
+
+      aside {
+        position: static;
+        display: flex;
+        gap: 14px;
+        overflow-x: auto;
+        padding: 0 0 22px;
+      }
+
+      aside p {
+        display: none;
+      }
+
+      aside a {
+        white-space: nowrap;
+        padding: 7px 13px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+      }
+
+      .contact {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="shell">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Alarimind</span>
+        </a>
+
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="hero" id="top">
+        <div class="eyebrow">Privacy, explained simply</div>
+
+        <h1>Your rest is personal.</h1>
+
+        <p>
+          This Privacy Policy explains how Alarimind handles information when
+          you use our sleep cycle, alarm, reminder, and offline sleep sounds app.
+        </p>
+
+        <div class="meta">
+          <span>
+            <strong>Effective date:</strong> October 26, 2026
+          </span>
+
+          <span>
+            <strong>App:</strong> Alarimind / Alarrimind
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <div class="layout">
+      <aside aria-label="On this page">
+        <p>On this page</p>
+        <a href="#scope">Scope</a>
+        <a href="#information">Information</a>
+        <a href="#use">How we use it</a>
+        <a href="#choices">Your choices</a>
+        <a href="#contact">Contact</a>
+      </aside>
+
+      <div class="content">
+        <div class="notice">
+          <strong>Quick summary.</strong>
+          Alarimind is designed to provide sleep-related tools. We aim to
+          collect only what is needed to operate and improve the app, and we do
+          not sell your personal information.
+        </div>
+
+        <section class="card" id="scope">
+          <h2>1. Scope of this policy</h2>
+
+          <p>
+            This policy applies to the Alarimind mobile application and related
+            services. It does not apply to third-party websites, app stores,
+            operating systems, or services that have their own privacy policies.
+          </p>
+
+          <p>
+            Alarimind is not a medical device and does not provide medical
+            advice, diagnosis, or treatment. Please consult a qualified
+            professional about health concerns.
+          </p>
+        </section>
+
+        <section class="card" id="information">
+          <h2>2. Information we may handle</h2>
+
+          <p>
+            The exact information handled depends on the features you use and
+            the configuration of the released app.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Information you enter:</strong>
+              alarm times, reminder settings, sleep preferences, and other
+              settings you choose to save.
+            </li>
+
+            <li>
+              <strong>Device permissions:</strong>
+              notification, alarm, vibration, and audio-related permissions
+              when you enable features that need them.
+            </li>
+
+            <li>
+              <strong>Local app data:</strong>
+              settings and preferences may be stored on your device so the app
+              can work. Offline sleep sounds are intended to play without
+              sending their content to us.
+            </li>
+
+            <li>
+              <strong>Technical information:</strong>
+              the app or a service provider may receive limited device,
+              diagnostic, or usage information where needed for reliability,
+              security, or support.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Analytics and advertising:</strong>
+            Alarimind uses Google AdMob to display advertisements. Depending on
+            your device settings, consent choices, and the app’s configuration,
+            Google and its partners may process information such as advertising
+            identifiers, device information, IP address, approximate location,
+            and ad interaction data to provide, measure, and improve advertising.
+            You can manage advertising and privacy choices through your device
+            settings and any consent controls presented in the app.
+
+            For more information, review
+            <a
+              href="https://policies.google.com/technologies/partner-sites"
+              rel="noopener noreferrer"
+            >
+              Google’s information about how it uses data from apps and sites
+            </a>.
+          </p>
+        </section>
+
+        <section class="card" id="use">
+          <h2>3. How information is used</h2>
+
+          <p>
+            Information may be used to provide alarms, reminders, sleep-cycle
+            calculations, sound playback, notifications, app settings, customer
+            support, security, troubleshooting, and improvements to the app.
+          </p>
+
+          <p>
+            We do not use sleep settings or other app data to make medical
+            decisions about you. We do not sell personal information. If the app
+            uses a third-party service, that service may process information
+            under its own terms and privacy policy.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>4. Storage, retention, and sharing</h2>
+
+          <p>
+            Data stored locally remains on your device until you delete it,
+            clear the app’s data, uninstall the app, or otherwise remove it.
+            Any information handled by a service provider is retained only as
+            long as reasonably needed for its stated purpose or as required by
+            law.
+          </p>
+
+          <p>
+            We may share information with service providers that help operate
+            the app, when required by law, to protect rights and safety, or as
+            part of a business transfer. We do not share information for
+            unrelated third-party marketing without the applicable permission
+            or legal basis.
+          </p>
+        </section>
+
+        <section class="card" id="choices">
+          <h2>5. Your choices and rights</h2>
+
+          <p>
+            You can manage permissions through your device settings, change or
+            delete saved app settings, and uninstall the app. Depending on where
+            you live, you may also have rights to request access, correction,
+            deletion, restriction, or a copy of personal information.
+          </p>
+
+          <p>
+            To make a privacy request, contact us using the details below. We
+            may need to verify your request before responding. You may also have
+            the right to contact your local data protection authority.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>6. Children’s privacy</h2>
+
+          <p>
+            Alarimind is not directed to children under the age required by
+            applicable law. We do not knowingly collect personal information
+            from children. If you believe a child has provided personal
+            information, please contact us so we can review and delete it where
+            appropriate.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>7. Security and changes</h2>
+
+          <p>
+            We use reasonable safeguards appropriate to the nature of the
+            information we handle. No app or transmission method can be
+            guaranteed completely secure.
+          </p>
+
+          <p>
+            We may update this policy when the app, services, or legal
+            requirements change. The updated version will be posted on this
+            page with a new effective date.
+          </p>
+        </section>
+
+        <section class="card contact" id="contact">
+          <div>
+            <h2>Questions?</h2>
+
+            <p>
+              For privacy questions or requests, email
+              <a href="mailto:lakmalyasiru95@gmail.com">
+                lakmalyasiru95@gmail.com
+              </a>.
+            </p>
+          </div>
+
+          <div class="contact-badge" aria-hidden="true">✉</div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <span>© <span id="year">2026</span> Alarimind</span>
+      <span>Sleep better. Wake gently.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
